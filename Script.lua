@@ -6,7 +6,7 @@ local Window = Rayfield:CreateWindow({
    LoadingTitle = "Exploiting the game..",
    LoadingSubtitle = "by kittysnowball35",
    ConfigurationSaving = {
-      Enabled = true,
+      Enabled = false,
       FolderName = nil, -- Create a custom folder for your hub/game
       FileName = "Ragdoll Engineer Hub"
    },
@@ -17,7 +17,7 @@ local Window = Rayfield:CreateWindow({
    },
    KeySystem = false, -- Set this to true to use our key system
    KeySettings = {
-      Title = "Untitled",
+      Title = "Key",
       Subtitle = "Key System",
       Note = "No method of obtaining the key is provided",
       FileName = "Key", -- It is recommended to use something unique as other scripts using Rayfield may overwrite your key file
@@ -74,7 +74,7 @@ game:GetService("ReplicatedStorage").Events.PlaceCarEvent:FireServer(unpack(args
 })
 
 local Button = MainTab:CreateButton({
-   Name = "Become the owner of mm2",
+   Name = "Become owner of mm2",
    CurrentValue = false,
    Flag = "Enable", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
    Callback = function(Value)
@@ -88,7 +88,7 @@ game:GetService("ReplicatedStorage").Events.OutfitRE:FireServer(unpack(args))
 })
 
 local Button = MainTab:CreateButton({
-   Name = "Become the owner of Meepcity",
+   Name = "Become owner of Meepcity",
    CurrentValue = false,
    Flag = "Enable", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
    Callback = function(Value)
@@ -113,7 +113,7 @@ game:GetService("ReplicatedStorage").Events.ResetDefaultAvatarEvent:FireServer()
 
 
 
-local TeleportTab = Window:CreateTab("Trolling 😁", nil) -- Title, Image
+local TeleportTab = Window:CreateTab("Trolling", nil) -- Title, Image
 local Section = TeleportTab:CreateSection("Troll")
 
 local Button = TeleportTab:CreateButton({
